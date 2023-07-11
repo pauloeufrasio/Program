@@ -1,7 +1,7 @@
 public class Product {
-    public String name;
-    public double price;
-    public int quantity;
+    private String name;
+    private double price;
+    private int quantity;
     public Product(){ // sobrecarga construtor padrão
     }
 
@@ -36,6 +36,30 @@ public class Product {
                 + quantity
                 + " units, Total: $ "
                 + String.format("%.2f", totalValueInStock());
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }
 
